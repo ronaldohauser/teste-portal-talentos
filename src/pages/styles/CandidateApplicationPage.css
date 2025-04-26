@@ -1,0 +1,162 @@
+.candidate-application-container {
+  max-width: 100%;
+  margin: 5vh auto;
+  padding: 5vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+.candidate-application-container h2 {
+  font-size: 5vw;
+  color: #333;
+  margin-bottom: 4vw;
+  text-align: center;
+}
+
+.candidate-application-container p {
+  font-size: 3.5vw;
+  color: #555;
+  margin-bottom: 8vw;
+  text-align: center;
+}
+
+.candidate-application-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+.candidate-application-container label {
+  font-size: 4vw;
+  color: #555;
+  margin-bottom: 1.5vw;
+  font-weight: 600;
+  display: block;
+  text-align: left;
+}
+
+.candidate-application-container input,
+.candidate-application-container select,
+.candidate-application-container textarea {
+  padding: 4vw;
+  font-size: 4vw;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  resize: none;
+}
+
+.candidate-application-container input:focus,
+.candidate-application-container select:focus,
+.candidate-application-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.candidate-application-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 5vw 12vw;
+  font-size: 4vw;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.candidate-application-container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.candidate-application-container .form-footer {
+  margin-top: 8vw;
+  text-align: center;
+  font-size: 4vw;
+  color: #888;
+}
+
+.candidate-application-container .form-footer a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.candidate-application-container .form-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .candidate-application-container {
+    max-width: 600px;
+    padding: 6vw;
+  }
+
+  .candidate-application-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .candidate-application-container p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .candidate-application-container label {
+    font-size: 1.2rem;
+  }
+
+  .candidate-application-container input,
+  .candidate-application-container select,
+  .candidate-application-container textarea {
+    font-size: 1.2rem;
+  }
+
+  .candidate-application-container button {
+    padding: 1.4rem 3rem;
+    font-size: 1.2rem;
+  }
+
+  .candidate-application-container .form-footer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .candidate-application-container {
+    max-width: 700px;
+    padding: 4vw;
+  }
+
+  .candidate-application-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .candidate-application-container label {
+    font-size: 1.3rem;
+  }
+
+  .candidate-application-container input,
+  .candidate-application-container select,
+  .candidate-application-container textarea {
+    font-size: 1.3rem;
+  }
+
+  .candidate-application-container button {
+    padding: 1.6rem 3.6rem;
+    font-size: 1.3rem;
+  }
+
+  .candidate-application-container .form-footer {
+    font-size: 1.1rem;
+  }
+}

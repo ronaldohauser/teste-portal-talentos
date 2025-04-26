@@ -1,0 +1,61 @@
+.candidate-list {
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.candidate-list h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.candidate-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.candidate-list th, .candidate-list td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.candidate-list th {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.candidate-list td {
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.candidate-list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 600px) {
+  .candidate-list h2 {
+    font-size: 2.5rem; 
+  }
+
+  .candidate-list th, .candidate-list td {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .candidate-list h2 {
+    font-size: 3rem;
+  }
+
+  .candidate-list th, .candidate-list td {
+    font-size: 1.2rem;
+  }
+
+  .candidate-list table {
+    margin-top: 30px;
+  }
+}

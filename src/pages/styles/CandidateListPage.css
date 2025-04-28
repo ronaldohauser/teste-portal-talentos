@@ -36,9 +36,53 @@
   background-color: #f2f2f2;
 }
 
+@media (max-width: 768px) {
+  .candidate-list h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .candidate-list th, .candidate-list td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .candidate-list table {
+    margin-top: 15px;
+  }
+
+  .candidate-list table, .candidate-list th, .candidate-list td {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .candidate-list h2 {
+    font-size: 1.8rem;
+  }
+
+  .candidate-list th, .candidate-list td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .candidate-list table {
+    margin-top: 10px;
+  }
+
+  .candidate-list th, .candidate-list td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .candidate-list .search-bar {
+    width: 100%;
+  }
+}
+
 @media (min-width: 600px) {
   .candidate-list h2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
 
   .candidate-list th, .candidate-list td {

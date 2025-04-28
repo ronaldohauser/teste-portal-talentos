@@ -1,53 +1,59 @@
 .candidate-application-container {
-  max-width: 100%;
+  max-width: 95%;
   margin: 5vh auto;
-  padding: 5vw;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 6vw 5vw;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   font-family: 'Arial', sans-serif;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .candidate-application-container h2 {
-  font-size: 5vw;
-  color: #333;
-  margin-bottom: 4vw;
+  font-size: 6vw;
   text-align: center;
+  color: #333;
+  margin-bottom: 5vw;
+  font-weight: bold;
+  width: 100%;
 }
 
 .candidate-application-container p {
-  font-size: 3.5vw;
-  color: #555;
-  margin-bottom: 8vw;
+  font-size: 4vw;
   text-align: center;
+  color: #555;
+  margin-bottom: 6vw;
+  width: 100%;
 }
 
 .candidate-application-container form {
   display: flex;
   flex-direction: column;
-  gap: 4vw;
+  gap: 5vw;
+  width: 100%;
 }
 
 .candidate-application-container label {
-  font-size: 4vw;
+  font-size: 4.5vw;
   color: #555;
-  margin-bottom: 1.5vw;
+  margin-bottom: 2vw;
   font-weight: 600;
-  display: block;
   text-align: left;
 }
 
 .candidate-application-container input,
 .candidate-application-container select,
 .candidate-application-container textarea {
-  padding: 4vw;
-  font-size: 4vw;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  padding: 4.5vw;
+  font-size: 4.5vw;
   width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
   box-sizing: border-box;
-  transition: border-color 0.3s;
+  transition: 0.3s;
   resize: none;
 }
 
@@ -60,16 +66,17 @@
 
 .candidate-application-container button {
   background-color: #007bff;
-  color: white;
-  padding: 5vw 12vw;
-  font-size: 4vw;
+  color: #fff;
+  padding: 5vw 8vw;
+  font-size: 5vw;
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
   width: 100%;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 5vw auto 0;
+  display: block;
 }
 
 .candidate-application-container button:hover {
@@ -82,6 +89,7 @@
   text-align: center;
   font-size: 4vw;
   color: #888;
+  width: 100%;
 }
 
 .candidate-application-container .form-footer a {
@@ -94,10 +102,33 @@
   text-decoration: underline;
 }
 
+/* Estilos para as habilidades e botão de remoção */
+.candidate-application-container .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.candidate-application-container .skill {
+  background-color: #f1f1f1;
+  padding: 1vw 2vw;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 4vw;
+  color: #333;
+}
+
+.candidate-application-container .remove-skill-button:hover {
+  color: #e60000;
+}
+
+/* Estilos para telas médias */
 @media (min-width: 600px) {
   .candidate-application-container {
     max-width: 600px;
-    padding: 6vw;
+    padding: 4vw;
   }
 
   .candidate-application-container h2 {
@@ -107,56 +138,68 @@
 
   .candidate-application-container p {
     font-size: 1.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
-  .candidate-application-container label {
-    font-size: 1.2rem;
-  }
-
+  .candidate-application-container label,
   .candidate-application-container input,
   .candidate-application-container select,
   .candidate-application-container textarea {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .candidate-application-container button {
-    padding: 1.4rem 3rem;
     font-size: 1.2rem;
+    padding: 1.2rem 2rem;
   }
 
   .candidate-application-container .form-footer {
     font-size: 1rem;
   }
+
+  .candidate-application-container .remove-skill-button {
+    font-size: 1.2rem;
+  }
+
+  .candidate-application-container .skill {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
+/* Estilos para telas grandes */
 @media (min-width: 900px) {
   .candidate-application-container {
     max-width: 700px;
-    padding: 4vw;
+    padding: 3vw;
   }
 
   .candidate-application-container h2 {
-    font-size: 2.4rem;
-    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
   }
 
-  .candidate-application-container label {
-    font-size: 1.3rem;
-  }
-
+  .candidate-application-container label,
   .candidate-application-container input,
   .candidate-application-container select,
   .candidate-application-container textarea {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .candidate-application-container button {
-    padding: 1.6rem 3.6rem;
     font-size: 1.3rem;
+    padding: 1.4rem 2.5rem;
   }
 
   .candidate-application-container .form-footer {
     font-size: 1.1rem;
+  }
+
+  .candidate-application-container .remove-skill-button {
+    font-size: 1.3rem;
+  }
+
+  .candidate-application-container .skill {
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
   }
 }

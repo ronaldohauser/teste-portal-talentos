@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Portal de Talentos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação para gestão de candidaturas e processos seletivos. Ele permite que recrutadores cadastrem candidatos e visualizem suas informações, além de possibilitar que os candidatos se candidatem às vagas abertas.
 
-## Available Scripts
+## Começando
 
-In the project directory, you can run:
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app), garantindo uma configuração rápida e fácil de começar a trabalhar.
 
-### `npm start`
+### Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Para rodar a aplicação localmente, você precisa ter o **Node.js** e o **npm** instalados. Caso não tenha, você pode instalá-los em [nodejs.org](https://nodejs.org/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Instalação
 
-### `npm test`
+1. Clone este repositório para a sua máquina:
+   ```
+   git clone https://github.com/ronaldohauser/teste-portal-talentos.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navegue até o diretório do projeto:
+   ```
+   cd teste-portal-talentos
 
-### `npm run build`
+3. Navegue até o diretório do projeto:
+   ```
+   npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Rodando a Aplicaçãos
+Depois de instalar as dependências, você pode iniciar a aplicação localmente:
+  ```
+  npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+A aplicação será aberta automaticamente no navegador em http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Funcionalidades
+## Para Recrutadores:
+Cadastro de candidatos com nome, e-mail, experiência, e cargo desejado.
 
-### `npm run eject`
+- Cada candidato recebe um código único para identificação.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Área para visualização das candidaturas enviadas.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Acesso para Recrutadores:
+E-mail: teste@teste.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Senha: Teste123
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Para Candidatos:
+Cadastro com informações pessoais, como nome, e-mail, e histórico profissional.
 
-## Learn More
+Possibilidade de visualização da candidatura e acompanhamento do status.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Acesso para Candidatos (Conta de Teste):
+Código de Usuário: 0001
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Comandos Disponíveis
+No diretório do projeto, você pode rodar os seguintes comandos:
 
-### Code Splitting
+npm start
+Roda a aplicação no modo de desenvolvimento.
+Abra http://localhost:3000 no seu navegador para visualizar.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+A página será recarregada automaticamente quando houver alterações no código.
 
-### Analyzing the Bundle Size
+npm test
+Roda os testes no modo interativo de observação.
+Para mais informações, consulte a seção sobre executando testes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm run build
+Cria a versão otimizada para produção da aplicação na pasta build.
+A aplicação é minificada e otimizada para o melhor desempenho possível.
 
-### Making a Progressive Web App
+Agora, a aplicação está pronta para ser implantada!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm run eject
+Aviso: esta operação é irreversível. Depois de executar o comando eject, você não poderá voltar.
 
-### Advanced Configuration
+Se você não estiver satisfeito com as configurações de construção e ferramentas, pode usar este comando para copiar todos os arquivos de configuração para o seu projeto. A partir daí, você terá total controle sobre as configurações do Webpack, Babel, ESLint e outras ferramentas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Como Funciona a Candidatura
+Recrutador: Pode visualizar todas as candidaturas.
 
-### Deployment
+Candidato: Envia sua candidatura preenchendo um formulário com seus dados pessoais e profissionais. O código sequencial gerado será utilizado para o candidato acompanhar sua candidatura.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Administração: O recrutador ou o administrador pode acessar os dados dos candidatos por meio de um painel de controle.
 
-### `npm run build` fails to minify
+# Tecnologias Usadas
+React.js: Framework JavaScript para construir interfaces de usuário.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Node.js: Ambiente de execução para JavaScript no servidor.
+
+Express: Framework web para Node.js, caso utilize no backend.
+
+Axios: Biblioteca para realizar requisições HTTP para consumir APIs.
+
+Licença
+Este projeto está licenciado sob a MIT License.
